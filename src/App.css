@@ -1,0 +1,10 @@
+#navbar_icon_links {
+    align-content: center;
+}
+
+#repo_list_items {
+    background-color: darkgrey;
+    color: snow;
+    border: 2px solid black;
+    border-radius: 10px;
+}
