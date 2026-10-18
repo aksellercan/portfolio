@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import githubIcon from './assets/github.svg';
+import linkedinIcon from './assets/linkedin.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -17,7 +19,7 @@ export default function coloredNavbar() {
           <div className="navbar_icon_links">
             <Navbar.Brand href={import.meta.env.VITE_GITHUB_LINK}>
               <img
-                src="src/assets/github.svg"
+                src={githubIcon}
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
@@ -26,7 +28,7 @@ export default function coloredNavbar() {
             </Navbar.Brand>
             <Navbar.Brand href={import.meta.env.VITE_LINKEDIN_LINK}>
               <img
-                src="src/assets/linkedin.svg"
+                src={linkedinIcon}
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
