@@ -3,9 +3,26 @@
     align-items: center;
 }
 
+#projects:target {
+    outline: 3px solid crimson;
+    outline-offset: -3px;
+}
+
+.repo-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.repo-columns>* {
+    flex: 1 1 400px;
+}
+
 .repo-container {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+    align-items: center;
     border-radius: 10px;
     background-color: #191919;
 }

@@ -12,7 +12,7 @@ export default function coloredNavbar() {
           <Navbar.Brand>Aksel Ercan</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href={`mailto:${import.meta.env.VITE_MAIL_CONTACT}`}>Contact me</Nav.Link>
           </Nav>
           <div className="navbar_icon_links">
             <Navbar.Brand href={import.meta.env.VITE_GITHUB_LINK}>
