@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { LanguageColors } from "./languageColors";
 
 export default function Github() {
     const [repos, setRepos] = useState([]);
@@ -16,30 +17,44 @@ export default function Github() {
             setRepos([]);
         }
         const jsonBody = await response.json();
-        console.log(`sent request ${jsonBody[1].name}`); 
+        console.log(`sent request ${jsonBody[1].name}`);
         setRepos(jsonBody);
     }
 
-    function loopOver() {
-        for (let i = 0; i < repos.length; i++) {
-            console.log(`Repo name: ${repos[i].name}`);
+    const listItems = repos.sort((a, b) => a.updated_at < b.updated_at).map(repo => {
+        const langColor = LanguageColors[repo.language];
+        return (
+            <li key={repo.id}
+                className={langColor ? "repo-item lang" : "repo-item"}
+                style={langColor ? { "--lang-color": langColor } : undefined}>
+                <a href={repo.html_url}>
+                    <h1>{repo.name}</h1>
+                    <p>{repo.description}</p>
+                    {repo.language && (
+                        <p className="repo-lang">
+                            <span className="lang-dot"
+                                style={langColor ? { backgroundColor: langColor } : undefined}></span>
+                            Language: {repo.language}
+                        </p>
+                    )}
+                </a>
+            </li>
+        );
+    });
+
+    let fetchCount = 0;
+    useEffect(() => {
+        async function wrapper() {
+            await fetchGithubProjects(import.meta.env.VITE_GITHUB_USERNAME);
         }
-    }
+        if (fetchCount > 0) {
+            return;
+        }
+        fetchCount++;
+        wrapper();
+    }, [fetchCount]);
 
-    const listItems = repos.sort((a,b) => a.updated_at < b.updated_at).map(repo => 
-    <li id="repo_list_items">
-        <h1>{repo.name}</h1>
-        <p>{repo.description}</p>
-        <p>Language = {repo.language}</p>
-    </li>);
-
-    return <Container>
-        <h2>HELLO</h2>
-
-        <button onClick={() => fetchGithubProjects("aksellercan")}>click me</button>
-
-        <button onClick={loopOver}>loop</button>
-
-        <ul>{listItems}</ul>
+    return <Container className="repo-container">
+        <ul className="repo-list">{listItems}</ul>
     </Container>
 }

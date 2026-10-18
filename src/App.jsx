@@ -1,12 +1,12 @@
 import './App.css'
-import ColorSchemesExample from './navbar'
+import Navbar from './navbar'
 import Github from './Github'
 
 function App() {
 
   return (
     <>
-      <ColorSchemesExample/>
+      <Navbar/>
       <Github />
     </>
   )

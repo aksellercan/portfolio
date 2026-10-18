@@ -1,3 +1,14 @@
 :root {
-  background-color: black;
+  --bg: #1e1e1e;
+  --surface: #212121;
+  --hover: #3f3f3f;
+  --text: #f1f1f1;
+  --text-dim: #aaaaaa;
+  --divider: #303030;
+}
+
+html body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Roboto, "Segoe UI", system-ui, sans-serif;
 }
