@@ -42,7 +42,7 @@ export default function Github() {
         setRepos(jsonBody);
     }
 
-    const sorted = [...repos].sort((a, b) => a.updated_at < b.updated_at);
+    const sorted = [...repos].sort((a, b) => a.pushed_at < b.pushed_at);
     const bestRepos = sorted.filter(repo => Projects.includes(repo.name));
 
     let fetchCount = 0;
