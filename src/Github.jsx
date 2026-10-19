@@ -58,7 +58,6 @@ export default function Github() {
     }, [fetchCount]);
 
     return (
-        <>
         <div className="repo-columns">
             <div className="repo-container" id="projects">
                 <h1>Projects</h1>
@@ -69,7 +68,5 @@ export default function Github() {
                 <ul className="repo-list">{sorted.map(renderRepo)}</ul>
             </div>
         </div>
-        <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Faksellercan.github.io%2Fportfolio%2F&label=Traffic&icon=github&color=%23198754&message=&style=flat&tz=localtime"/>
-        </>
     );
 }

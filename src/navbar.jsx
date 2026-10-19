@@ -17,6 +17,9 @@ export default function coloredNavbar() {
             <Nav.Link href={`mailto:${import.meta.env.VITE_MAIL_CONTACT}`}>Contact me</Nav.Link>
           </Nav>
           <div className="navbar_icon_links">
+            <Navbar.Brand href={import.meta.env.VITE_SELF_REPO_LINK}>
+              <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Faksellercan.github.io%2Fportfolio%2F&label=Traffic&icon=github&color=%23198754&message=&style=flat&tz=localtime"/>
+      </Navbar.Brand>
             <Navbar.Brand href={import.meta.env.VITE_GITHUB_LINK}>
               <img
                 src={githubIcon}
