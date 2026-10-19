@@ -3,6 +3,31 @@
     align-items: center;
 }
 
+.socials-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.socials-dropdown-toggle:focus,
+.socials-dropdown-toggle:hover {
+    text-decoration: none;
+}
+
+.socials-dropdown-menu {
+    min-width: 10rem;
+}
+
+.socials-dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials-dropdown-menu .dropdown-item img {
+    flex-shrink: 0;
+}
+
 #projects:target {
     outline: 3px solid cadetblue;
     outline-offset: -3px;
