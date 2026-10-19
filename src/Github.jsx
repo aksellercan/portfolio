@@ -60,9 +60,11 @@ export default function Github() {
     return (
         <div className="repo-columns">
             <div className="repo-container" id="projects">
+                <h1>Projects</h1>
                 <ul className="repo-list">{bestRepos.map(renderRepo)}</ul>
             </div>
             <div className="repo-container">
+                <h1>All Repositories</h1>
                 <ul className="repo-list">{sorted.map(renderRepo)}</ul>
             </div>
         </div>

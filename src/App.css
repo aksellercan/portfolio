@@ -4,7 +4,7 @@
 }
 
 #projects:target {
-    outline: 3px solid crimson;
+    outline: 3px solid cadetblue;
     outline-offset: -3px;
 }
 
@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     align-items: flex-start;
+    padding: 1rem;
 }
 
 .repo-columns>* {
@@ -31,7 +32,13 @@
     list-style: none;
     padding: 0;
     max-width: 420px;
-    margin-top: 1rem;
+    /* margin: 1rem auto 0; */
+    margin: 1rem 10px 10px;
+}
+
+.repo-container>h1 {
+    max-width: 420px;
+    margin-left: 10px;
 }
 
 .repo-item {
@@ -75,7 +82,7 @@
 }
 
 .navbar {
-    background-color: crimson;
+    background-color: darkcyan;
     border-radius: 10px;
     margin: 10px 10px 10px 10px;
 }
