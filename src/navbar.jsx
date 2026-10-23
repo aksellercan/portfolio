@@ -3,6 +3,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import githubIcon from './assets/github.svg';
+import gitlabIcon from './assets/gitlab.svg';
 import linkedinIcon from './assets/linkedin.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -13,6 +14,7 @@ const trafficBadgeUrl =
 const socialLinks = [
   { label: 'Traffic', href: import.meta.env.VITE_SELF_REPO_LINK, icon: trafficBadgeUrl },
   { label: 'GitHub', href: import.meta.env.VITE_GITHUB_LINK, icon: githubIcon },
+  { label: 'Gitlab', href: import.meta.env.VITE_GITLAB_LINK, icon: gitlabIcon },
   { label: 'LinkedIn', href: import.meta.env.VITE_LINKEDIN_LINK, icon: linkedinIcon },
 ];
 

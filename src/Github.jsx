@@ -48,7 +48,7 @@ export default function Github() {
     let fetchCount = 0;
     useEffect(() => {
         async function wrapper() {
-            await fetchGithubProjects(import.meta.env.VITE_GITHUB_USERNAME);
+            await fetchGithubProjects(import.meta.env.VITE_USERNAME);
         }
         if (fetchCount > 0) {
             return;
