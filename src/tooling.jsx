@@ -1,0 +1,105 @@
+export default function tooling() {
+    const programs = [
+        "kitty",
+        "Affinity",
+        "Davinci Resolve",
+    ]
+
+    const editors = [
+        "Visual Studio Code",
+        "Intellij",
+        "Rider",
+        "Neovim"
+    ]
+
+    const browser = [
+        "Firefox",
+        "Helium"
+    ]
+
+    const computers = [
+        {
+            name: "Macbook Pro 14\"",
+            operatingSystem: "MacOS 27",
+            processor: "M5",
+            hasDedicatedGPU: false,
+            memory: "16gb LPDDR5",
+            storage: "512gb SSD"
+        },
+        {
+            name: "Lenovo Ideapad Gaming 3",
+            operatingSystem: "Windows 10 LTSC && Arch Linux",
+            processor: "AMD Ryzen 5 5600H",
+            hasDedicatedGPU: true,
+            graphics: "NVIDIA GeForce RTX 3060 max-Q",
+            memory: "32gb DDR4",
+            storage: "2tb SSD (2x 1tb M.2)"
+        },
+        {
+            name: "Toshiba Portege Z930",
+            operatingSystem: "Arch Linux",
+            processor: "Intel i5 3337U",
+            hasDedicatedGPU: false,
+            memory: "6gb DDR3",
+            storage: "256gb SSD"
+        },
+        {
+            name: "Microsoft Surface Go 2",
+            operatingSystem: "Windows 11 Pro",
+            processor: "Intel Core M3-8100Y",
+            hasDedicatedGPU: false,
+            memory: "8gb LPDDR3",
+            storage: "256gb SSD"
+        },
+    ]
+
+    const languages = [
+        "Java",
+        "C#",
+        "C",
+        "Javascript/TypeScript",
+        "Rust (currently learning)"
+    ]
+
+    const frameworks = [
+        "SpringBoot",
+        ".NET",
+        "Vite",
+        "React"
+    ]
+
+    const other_tools = [
+        "Docker",
+        "MariaDB",
+        "SQLite"
+    ]
+
+
+    return <div>
+    <div className="toolingList">
+        <div id="toolingPos">
+            <h2>
+                Computers
+            </h2>
+            {
+                computers.map((komp, index) => (
+                    <div id="toolingIndex" key={index}>
+                        <h3>{komp.name}</h3>
+                        <p>OS: {komp.operatingSystem}</p>
+                        <p>CPU: {komp.processor}</p>
+                        {
+                        komp.hasDedicatedGPU 
+                        ? 
+                        <p>GPU: {komp.graphics}</p>
+                        :
+                        ""
+                        }
+                        <p>RAM: {komp.memory}</p>
+                        <p>Storage: {komp.storage}</p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    </div>
+}

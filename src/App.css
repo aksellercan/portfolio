@@ -28,88 +28,39 @@
     flex-shrink: 0;
 }
 
-#projects:target {
-    outline: 3px solid cadetblue;
-    outline-offset: -3px;
-}
-
-.repo-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: flex-start;
-    padding: 1rem;
-}
-
-.repo-columns>* {
-    flex: 1 1 400px;
-}
-
-.repo-container {
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    align-items: center;
-    border-radius: 10px;
-    /* background-color: black; */
-    /* background: rgba(255, 255, 255, 0.5); */
-    background-color: #42413C2E
-}
-
-.repo-list {
-    list-style: none;
-    padding: 0;
-    max-width: 420px;
-    /* margin: 1rem auto 0; */
-    margin: 1rem 10px 10px;
-}
-
-.repo-container>h1 {
-    max-width: 420px;
-    margin-left: 10px;
-}
-
-.repo-item {
-    padding: 8px 12px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.repo-item:hover {
-    background-color: var(--hover);
-}
-
-.repo-item.lang:hover {
-    background-color: color-mix(in srgb, var(--lang-color) 35%, transparent);
-}
-
-.repo-lang {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.lang-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background-color: var(--text-dim);
-}
-
-.repo-item h1 {
-    font-size: 15px;
-    font-weight: 500;
-    margin: 0;
-}
-
-.repo-item p {
-    font-size: 13px;
-    color: var(--text-dim);
-    margin: 2px 0 0;
-}
-
 .navbar {
-    background-color: darkcyan;
+    background-color: gray;
     border-radius: 10px;
     margin: 10px 10px 10px 10px;
+}
+
+.eduList,
+.projectList,
+.toolingList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eduIndex,
+#projectIndex,
+#about,
+#toolingIndex {
+    text-align: left;
+}
+
+#eduPos,
+#projects,
+#toolingPos {
+    width: 50%;
+    /* border-radius: 2%; */
+    border-color: cadetblue;
+    border-style: groove;
+    background-color: rgb(29, 29, 29);
+    padding: 10px;
+}
+
+#easter {
+    width: 60px;
+    height: 60px;
 }

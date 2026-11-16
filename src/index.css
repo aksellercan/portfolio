@@ -1,14 +1,5 @@
-:root {
-  --bg: #1e1e1e;
-  --surface: #212121;
-  --hover: #3f3f3f;
-  --text: #f1f1f1;
-  --text-dim: #aaaaaa;
-  --divider: #303030;
-}
-
 html body {
-  background: #1e1e1e url('./assets/background.jpg') center / cover no-repeat fixed;
-  color: var(--text);
-  font-family: Roboto, "Segoe UI", system-ui, sans-serif;
+  background: darkslategray;
+  color: azure;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
