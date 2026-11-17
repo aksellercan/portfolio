@@ -1,4 +1,4 @@
-import gif from './assets/image/twitter_2107349146688504013.gif'
+import gif from '../../assets/image/twitter_2107349146688504013.gif'
 
 export default function footer() {
     const easterEggSource = gif
@@ -12,7 +12,10 @@ export default function footer() {
                 <p>Hosting: Github Pages</p>
             </div>
             <div id='imgDiv'>
-                <img src={easterEggSource} id="easter"></img>
+                <img
+                    src={easterEggSource}
+                    id="easter"
+                    alt='<><'></img>
             </div>
         </div>
         <p style={{ margin: 0, color: "skyblue" }}>Updated on 17.11.2026</p>

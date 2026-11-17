@@ -1,0 +1,24 @@
+.footerClass {
+    border-color: cadetblue;
+    border-style: groove none none none;
+    background-color: rgb(29, 29, 29);
+}
+
+#stackList p {
+    margin: 0;
+}
+
+#imgDiv {}
+
+#easter {
+    display: block;
+    align-self: flex-start;
+    width: 60px;
+    height: 60px;
+}
+
+#footerFormatDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

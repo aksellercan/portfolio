@@ -1,22 +1,4 @@
-export default function tooling() {
-    const programs = [
-        "kitty",
-        "Affinity",
-        "Davinci Resolve",
-    ]
-
-    const editors = [
-        "Visual Studio Code",
-        "Intellij",
-        "Rider",
-        "Neovim"
-    ]
-
-    const browser = [
-        "Firefox",
-        "Helium"
-    ]
-
+export default function computers() {
     const computers = [
         {
             name: "Macbook Pro 14\"",
@@ -53,26 +35,8 @@ export default function tooling() {
         },
     ]
 
-    const languages = [
-        "Java",
-        "C#",
-        "C",
-        "Javascript/TypeScript",
-        "Rust (currently learning)"
-    ]
+    
 
-    const frameworks = [
-        "SpringBoot",
-        ".NET",
-        "Vite",
-        "React"
-    ]
-
-    const other_tools = [
-        "Docker",
-        "MariaDB",
-        "SQLite"
-    ]
 
 
     return <div>

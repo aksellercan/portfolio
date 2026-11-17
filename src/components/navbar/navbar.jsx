@@ -1,12 +1,17 @@
+//bootstrap imports
 import Container from 'react-bootstrap/Container';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import githubIcon from './assets/github.svg';
-import gitlabIcon from './assets/gitlab.svg';
-import linkedinIcon from './assets/linkedin.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+import { Link } from 'react-router-dom';
+
+//logos
+import githubIcon from '../../assets/github.svg';
+import gitlabIcon from '../../assets/gitlab.svg';
+import linkedinIcon from '../../assets/linkedin.svg';
 
 const trafficBadgeUrl =
   "https://hitscounter.dev/api/hit?url=https%3A%2F%2Faksellercan.github.io%2Fportfolio%2F&label=Traffic&icon=github&color=%23198754&message=&style=flat&tz=localtime";
@@ -23,9 +28,11 @@ export default function coloredNavbar() {
     <>
       <Navbar className='navbar' data-bs-theme="dark" sticky='top'>
         <Container>
-          {/* <Navbar.Brand>[x]</Navbar.Brand> */}
+          <Navbar.Brand as={Link} to="/">/</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link as={Link} to='/'>Home</Nav.Link>
+            <Nav.Link as={Link} to='/projects'>Projects</Nav.Link>
+            <Nav.Link as={Link} to='/interests'>Interests</Nav.Link>
             <Nav.Link href={`mailto:${import.meta.env.VITE_MAIL_CONTACT}`}>Contact me</Nav.Link>
           </Nav>
           <div className="navbar_icon_links d-none d-md-inline-flex">
@@ -79,7 +86,7 @@ export default function coloredNavbar() {
             </Dropdown.Menu>
           </Dropdown>
         </Container>
-      </Navbar>
+      </Navbar >
     </>
   );
 }

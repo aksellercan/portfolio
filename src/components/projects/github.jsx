@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Projects } from "./Projects";
+import { standouts } from "./standouts";
 
 function renderRepo(repo) {
     return (
@@ -32,8 +32,8 @@ export default function Github() {
         setRepos(jsonBody);
     }
 
-    const sorted = [...repos].sort((a, b) => a.pushed_at < b.pushed_at);
-    const bestRepos = sorted.filter(repo => Projects.includes(repo.name));
+    const sorted = [...repos].sort((a, b) => a.pushed_at < b.pushed_at).slice(0, 5);
+    const bestRepos = sorted.filter(repo => standouts.includes(repo.name));
 
     let fetchCount = 0;
     useEffect(() => {
@@ -48,8 +48,8 @@ export default function Github() {
     }, [fetchCount]);
 
     return (
-<div className="projectList">
-        <div id="projects">
+        <div className="projectList">
+            <div id="projects">
                 <div id="projectIndex">
                     <h2>Projects</h2>
                     <ul>{bestRepos.map(renderRepo)}</ul>
@@ -60,7 +60,7 @@ export default function Github() {
                     <ul>{sorted.map(renderRepo)}</ul>
                     <br></br>
                 </div>
+            </div>
         </div>
-    </div>
     );
 }

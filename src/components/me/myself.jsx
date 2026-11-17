@@ -4,13 +4,14 @@ export default function myself() {
     const extraNotes = "This is my website and it is still work in progress";
     return <div className="eduList">
         <div id="eduPos">
-                <div id="about">
-                    <h2>About Me</h2>
-                    <p>{tldr}</p>
-                    <p>{aboutMe}</p>
-                    <br></br>
-                    <p>{extraNotes}</p>
-                </div>
+            <div id="about">
+                <h2>About Me</h2>
+                <p>{tldr}</p>
+                <br></br>
+                <p>{aboutMe}</p>
+                <br></br>
+                <p>{extraNotes}</p>
+            </div>
         </div>
     </div>
 }

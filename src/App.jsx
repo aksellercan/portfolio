@@ -1,29 +1,40 @@
+// CSS imports
 import './App.css'
-import Navbar from './navbar'
-import Education from './education'
-import Editors from './editors'
-import Myself from './myself'
-import Github from './Github'
-import Tooling from './tooling'
-import Footer from './footer'
+import './components/navbar/navbar.css'
+import './components/footer/footer.css'
+
+// Component imports
+import Navbar from './components/navbar/navbar'
+import Footer from './components/footer/footer'
+
+//pages
+import Home from './pages/home/home'
+import Projects from './pages/projects/projects'
+import Interests from './pages/interests/interests'
+
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
+
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <br></br>
-      <Myself/>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/interests' element={<Interests />} />
+      </Routes>
+      {/* <br></br>
+      <Programs />
       <br></br>
-      <Education/>
+      <Github />
       <br></br>
-      <Editors/>
+      <Computers /> */}
       <br></br>
-      <Github/>
-      <br></br>
-      <Tooling/>
-      <br></br>
-      <Footer/>
+      <Footer />
     </>
   )
 }

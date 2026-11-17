@@ -1,36 +1,4 @@
-.navbar_icon_links {
-    display: flex;
-    align-items: center;
-}
 
-.socials-dropdown-toggle {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.socials-dropdown-toggle:focus,
-.socials-dropdown-toggle:hover {
-    text-decoration: none;
-}
-
-.socials-dropdown-menu {
-    min-width: 10rem;
-}
-
-.socials-dropdown-menu .dropdown-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.socials-dropdown-menu .dropdown-item img {
-    flex-shrink: 0;
-}
-
-.navbar {
-    background-color: gray;
-}
 
 .eduList,
 .projectList,
@@ -41,8 +9,10 @@
     align-items: center;
 }
 
+
 .eduList p,
-.toolingList p {
+.toolingList p,
+.editorsList p {
     margin: 0;
 }
 
@@ -94,27 +64,3 @@
     }
 }
 
-.footerClass {
-    border-color: cadetblue;
-    border-style: groove none none none;
-    background-color: rgb(29, 29, 29);
-}
-
-#stackList p {
-    margin: 0;
-}
-
-#imgDiv {}
-
-#easter {
-    display: block;
-    align-self: flex-start;
-    width: 60px;
-    height: 60px;
-}
-
-#footerFormatDiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}

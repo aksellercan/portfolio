@@ -1,4 +1,4 @@
-export const Projects = [
+export const standouts = [
     "NetworkCloudDrive",
     "personalSpotifyWebAPIService",
     "portfolio",
