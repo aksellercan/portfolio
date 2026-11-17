@@ -1,4 +1,6 @@
 export const Projects = [
     "NetworkCloudDrive",
-    "personalSpotifyWebAPIService"
+    "personalSpotifyWebAPIService",
+    "portfolio",
+    "FoodOutletRESTAPI"
 ]

@@ -4,6 +4,17 @@ export default function footer() {
     const easterEggSource = gif
 
     return <div className="footerClass">
-        <img src={easterEggSource} id="easter"></img>
-    </div>
+        <div id='footerFormatDiv'>
+            <div id='stackList'>
+                <h4>Tech Stack:</h4>
+                <p>Framework: Vite with React</p>
+                <p>Font: Lilex Nerd Font</p>
+                <p>Hosting: Github Pages</p>
+            </div>
+            <div id='imgDiv'>
+                <img src={easterEggSource} id="easter"></img>
+            </div>
+        </div>
+        <p style={{ margin: 0, color: "skyblue" }}>Updated on 17.11.2026</p>
+    </div >
 }

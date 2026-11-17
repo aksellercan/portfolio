@@ -76,30 +76,37 @@ export default function tooling() {
 
 
     return <div>
-    <div className="toolingList">
-        <div id="toolingPos">
-            <h2>
-                Computers
-            </h2>
-            {
-                computers.map((komp, index) => (
-                    <div id="toolingIndex" key={index}>
-                        <h3>{komp.name}</h3>
-                        <p>OS: {komp.operatingSystem}</p>
-                        <p>CPU: {komp.processor}</p>
-                        {
-                        komp.hasDedicatedGPU 
-                        ? 
-                        <p>GPU: {komp.graphics}</p>
-                        :
-                        ""
-                        }
-                        <p>RAM: {komp.memory}</p>
-                        <p>Storage: {komp.storage}</p>
-                    </div>
-                ))
-            }
+        <div className="toolingList">
+            <div id="toolingPos">
+                <h2>
+                    Computers
+                </h2>
+                {
+                    computers.map((komp, index) => (
+                        <div id="toolingIndex" key={index}>
+                            <h4>&gt; {komp.name}</h4>
+                            <p>OS: {komp.operatingSystem}</p>
+                            <p>CPU: {komp.processor}</p>
+                            {
+                                komp.hasDedicatedGPU
+                                    ?
+                                    <p>GPU: {komp.graphics}</p>
+                                    :
+                                    ""
+                            }
+                            <p>RAM: {komp.memory}</p>
+                            <p>Storage: {komp.storage}</p>
+                            {
+                                index == computers.length - 1
+                                    ?
+                                    ""
+                                    :
+                                    <br></br>
+                            }
+                        </div>
+                    ))
+                }
+            </div>
         </div>
-    </div>
     </div>
 }

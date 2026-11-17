@@ -1,5 +1,11 @@
 html body {
   background: darkslategray;
   color: azure;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: "Lilex Nerd Font";
+}
+
+@font-face {
+  font-family: "Lilex Nerd Font";
+  src: url('./assets/fonts/Lilex-Regular.ttf') format("truetype");
 }

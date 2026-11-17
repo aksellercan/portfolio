@@ -4,7 +4,7 @@ export default function education() {
             instutation: "University of Regensburg",
             level: "Masters Degree",
             subject: "Computer Science",
-            // currentSemester: "1st Semester WiSe",
+            currentSemester: "1st Semester WiSe",
             startDate: "12.10.2026",
             endDate: "2028 (expected)",
             location: "Regensburg, Bavaria, Germany",
@@ -19,25 +19,32 @@ export default function education() {
             location: "Poznan, Wielkopolski, Poland",
             completed: true
         },
-        ];
+    ];
 
     return <div className="eduList">
         <div id="eduPos">
             <h1>Education</h1>
-        {
-            educationList.map((edu, index) => (
-                <div key={index} id="eduIndex">
-                    <h2>{index == 0 ? "Current": `${index+1}#`}</h2>
-                    <h3>{edu.instutation}</h3>
-                    <p>Degree: {edu.level}</p>
-                    <p>Study Area: {edu.subject}</p>
-                    <p>Start: {edu.startDate}</p>
-                    <p>End: {edu.endDate}</p>
-                    <p>Where: {edu.location}</p>
-                    {index != educationList.length-1 ? <br></br>: ""}
-                </div>
-            ))
-        }
+            {
+                educationList.map((edu, index) => (
+                    <div key={index} id="eduIndex">
+                        <h2>{index == 0 ? "Current" : `${index + 1}#`}</h2>
+                        <h3>{edu.instutation}</h3>
+                        {
+                            edu.completed
+                                ?
+                                ""
+                                :
+                                <p>Current Semester: {edu.currentSemester}</p>
+                        }
+                        <p>Degree: {edu.level}</p>
+                        <p>Study Area: {edu.subject}</p>
+                        <p>Start: {edu.startDate}</p>
+                        <p>End: {edu.endDate}</p>
+                        <p>Where: {edu.location}</p>
+                        {index != educationList.length - 1 ? <br></br> : ""}
+                    </div>
+                ))
+            }
         </div>
     </div>
 }

@@ -23,7 +23,7 @@ export default function coloredNavbar() {
     <>
       <Navbar className='navbar' data-bs-theme="dark" sticky='top'>
         <Container>
-          <Navbar.Brand>Aksel Ercan</Navbar.Brand>
+          {/* <Navbar.Brand>[x]</Navbar.Brand> */}
           <Nav className="me-auto">
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href={`mailto:${import.meta.env.VITE_MAIL_CONTACT}`}>Contact me</Nav.Link>

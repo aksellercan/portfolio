@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './navbar'
 import Education from './education'
+import Editors from './editors'
 import Myself from './myself'
 import Github from './Github'
 import Tooling from './tooling'
@@ -11,11 +12,14 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Myself />
       <br></br>
-      <Education />
+      <Myself/>
       <br></br>
-      <Github />
+      <Education/>
+      <br></br>
+      <Editors/>
+      <br></br>
+      <Github/>
       <br></br>
       <Tooling/>
       <br></br>

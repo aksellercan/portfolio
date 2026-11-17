@@ -30,37 +30,91 @@
 
 .navbar {
     background-color: gray;
-    border-radius: 10px;
-    margin: 10px 10px 10px 10px;
 }
 
 .eduList,
 .projectList,
-.toolingList {
+.toolingList,
+.editorsList {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.eduList p,
+.toolingList p {
+    margin: 0;
+}
+
 #eduIndex,
 #projectIndex,
 #about,
-#toolingIndex {
+#toolingIndex,
+#editorsIndex {
     text-align: left;
+    flex-wrap: wrap;
+}
+
+#list_project {
+    list-style: square;
+    color: skyblue;
+    overflow-wrap: break-word;
+}
+
+#projectIndex a:link,
+#projectIndex a:visited {
+    color: azure;
+}
+
+#projectIndex a:hover {
+    color: skyblue;
 }
 
 #eduPos,
 #projects,
-#toolingPos {
+#toolingPos,
+#editorsPos {
     width: 50%;
     /* border-radius: 2%; */
+    margin-inline: auto;
     border-color: cadetblue;
     border-style: groove;
     background-color: rgb(29, 29, 29);
     padding: 10px;
 }
 
+@media(max-width: 770px) {
+
+    #eduPos,
+    #projects,
+    #toolingPos,
+    #editorsPos {
+        width: 100%;
+        margin-inline: auto;
+    }
+}
+
+.footerClass {
+    border-color: cadetblue;
+    border-style: groove none none none;
+    background-color: rgb(29, 29, 29);
+}
+
+#stackList p {
+    margin: 0;
+}
+
+#imgDiv {}
+
 #easter {
+    display: block;
+    align-self: flex-start;
     width: 60px;
     height: 60px;
+}
+
+#footerFormatDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

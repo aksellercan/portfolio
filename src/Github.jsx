@@ -3,10 +3,11 @@ import { Projects } from "./Projects";
 
 function renderRepo(repo) {
     return (
-        <li key={repo.id}>
+        <li id="list_project" key={repo.id}>
             <a href={repo.html_url}>
-                <h3>{repo.name}</h3>
+                <h4>{repo.name}</h4>
                 <p>{repo.description}</p>
+                <p>{repo.language}</p>
             </a>
         </li>
     );
