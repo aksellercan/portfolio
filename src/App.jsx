@@ -1,10 +1,10 @@
 // CSS imports
 import './App.css'
-import './components/navbar/navbar.css'
+import './components/navbar/CustomNavbar.css'
 import './components/footer/footer.css'
 
 // Component imports
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/navbar/CustomNavbar'
 import Footer from './components/footer/footer'
 
 //pages
