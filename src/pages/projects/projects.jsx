@@ -4,6 +4,5 @@ export default function projects() {
 
     return <>
         <Github />
-        <br></br>
     </>
 }

@@ -50,12 +50,12 @@ export default function Github() {
     return (
         <div className="globalUpperDiv">
             <div className="globalPositionDiv">
-                <div id="projectIndex">
-                    <h2>Projects</h2>
+                <div id="globalIndexDiv">
+                    <h2>Projects I spend some time on</h2>
                     <ul>{bestRepos.map(renderRepo)}</ul>
                     <br></br>
                 </div>
-                <div id="projectIndex">
+                <div id="globalIndexDiv">
                     <h2>All Repositories (Updates on each push)</h2>
                     <ul>{sorted.map(renderRepo)}</ul>
                     <br></br>

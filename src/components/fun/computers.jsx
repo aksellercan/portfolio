@@ -35,10 +35,6 @@ export default function computers() {
         },
     ]
 
-
-
-
-
     return <div>
         <div className="globalUpperDiv">
             <div className="globalPositionDiv">

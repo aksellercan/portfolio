@@ -1,8 +1,6 @@
 import gif from '../../assets/image/twitter_2107349146688504013.gif'
 
 export default function footer() {
-    const easterEggSource = gif
-
     return <div className="footerClass">
         <div id='footerFormatDiv'>
             <div id='stackList'>
@@ -13,7 +11,7 @@ export default function footer() {
             </div>
             <div id='imgDiv'>
                 <img
-                    src={easterEggSource}
+                    src={gif}
                     id="easter"
                     alt='<><'></img>
             </div>

@@ -2,8 +2,11 @@
 set -e
 
 function update_file(){
-    time_stamp=$(echo "\"$(date +%Y-%m-%d)\"")
+    time_stamp=$(echo "\"$(date +%d.%m.%Y)\"")
     sed -i '.BAK' "s/VITE_UPDATED_AT=.*/VITE_UPDATED_AT=${time_stamp}/" .env
+    if [ -f .env.BAK ]; then
+        rm .env.BAK
+    fi
 }
 
 if ! [ -f .env ]; then

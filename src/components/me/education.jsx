@@ -21,7 +21,7 @@ export default function education() {
         },
     ];
 
-    return <div className="globalBoxDiv">
+    return <div className="globalUpperDiv">
         <div className="globalPositionDiv">
             <h1>Education</h1>
             {

@@ -22,19 +22,12 @@ function App() {
     <>
       <Navbar />
       <br></br>
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/NetworkCloudDrive' element={<NetworkCloudDrive />} />
         <Route path='/interests' element={<Interests />} />
       </Routes>
-      {/* <br></br>
-      <Programs />
-      <br></br>
-      <Github />
-      <br></br>
-      <Computers /> */}
       <br></br>
       <Footer />
     </>

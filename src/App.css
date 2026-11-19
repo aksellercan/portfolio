@@ -5,15 +5,10 @@
 }
 
 
-.globalUpperDiv p {
+body p {
     margin: 0;
 }
 
-#eduIndex,
-#projectIndex,
-#about,
-#toolingIndex,
-#editorsIndex,
 #globalIndexDiv {
     text-align: left;
     flex-wrap: wrap;
@@ -41,6 +36,11 @@ a:hover {
     border-style: groove;
     background-color: rgb(29, 29, 29);
     padding: 10px;
+}
+
+#subTextP,
+body span {
+    color: skyblue;
 }
 
 @media(max-width: 770px) {
