@@ -14,20 +14,22 @@ export default function languages() {
         "React"
     ]
 
-    return <div className="programmingSkillsDiv">
-        {
-            languages.map((lang, index) => (
-                <div key={index}>
-                    <p>{lang}</p>
-                </div>
-            ))
-        }
-        {
-            frameworks.map((frame, index) => (
-                <div key={index}>
-                    <p>{frame}</p>
-                </div>
-            ))
-        }
+    return <div className="globalBoxDiv">
+        <div className="globalPositionDiv">
+            {
+                languages.map((lang, index) => (
+                    <div key={index}>
+                        <p>{lang}</p>
+                    </div>
+                ))
+            }
+            {
+                frameworks.map((frame, index) => (
+                    <div key={index}>
+                        <p>{frame}</p>
+                    </div>
+                ))
+            }
+        </div>
     </div>
 }

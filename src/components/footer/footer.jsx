@@ -18,6 +18,6 @@ export default function footer() {
                     alt='<><'></img>
             </div>
         </div>
-        <p style={{ margin: 0, color: "skyblue" }}>Updated on 17.11.2026</p>
+        <p style={{ margin: 0, color: "skyblue" }}>Updated on {import.meta.env.VITE_UPDATED_AT}</p>
     </div >
 }

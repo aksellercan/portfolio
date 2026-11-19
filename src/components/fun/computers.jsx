@@ -35,19 +35,19 @@ export default function computers() {
         },
     ]
 
-    
+
 
 
 
     return <div>
-        <div className="toolingList">
-            <div id="toolingPos">
+        <div className="globalUpperDiv">
+            <div className="globalPositionDiv">
                 <h2>
                     Computers
                 </h2>
                 {
                     computers.map((komp, index) => (
-                        <div id="toolingIndex" key={index}>
+                        <div id="globalIndexDiv" key={index}>
                             <h4>&gt; {komp.name}</h4>
                             <p>OS: {komp.operatingSystem}</p>
                             <p>CPU: {komp.processor}</p>

@@ -48,8 +48,8 @@ export default function Github() {
     }, [fetchCount]);
 
     return (
-        <div className="projectList">
-            <div id="projects">
+        <div className="globalUpperDiv">
+            <div className="globalPositionDiv">
                 <div id="projectIndex">
                     <h2>Projects</h2>
                     <ul>{bestRepos.map(renderRepo)}</ul>

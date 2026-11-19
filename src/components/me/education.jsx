@@ -21,12 +21,12 @@ export default function education() {
         },
     ];
 
-    return <div className="eduList">
-        <div id="eduPos">
+    return <div className="globalBoxDiv">
+        <div className="globalPositionDiv">
             <h1>Education</h1>
             {
                 educationList.map((edu, index) => (
-                    <div key={index} id="eduIndex">
+                    <div key={index} id="globalIndexDiv">
                         <h2>{index == 0 ? "Current" : `${index + 1}#`}</h2>
                         <h3>{edu.instutation}</h3>
                         {

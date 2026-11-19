@@ -17,18 +17,12 @@ export default function editors() {
         "Helium"
     ]
 
-    const other_tools = [
-        "Docker",
-        "MariaDB",
-        "SQLite"
-    ]
-
-    return <div className="editorsList">
-        <div id="editorsPos">
+    return <div className="globalUpperDiv">
+        <div className="globalPositionDiv">
             <h2>Editors and IDE's</h2>
             {
                 editors.map((editor, index) => (
-                    <div key={index} id="editorsIndex">
+                    <div key={index} id="globalIndexDiv">
                         <p>{editor}</p>
                     </div>
                 ))
@@ -37,7 +31,7 @@ export default function editors() {
             <h2>Browsers</h2>
             {
                 browser.map((editor, index) => (
-                    <div key={index} id="editorsIndex">
+                    <div key={index} id="globalIndexDiv">
                         <p>{editor}</p>
                     </div>
                 ))
@@ -46,16 +40,7 @@ export default function editors() {
             <h2>Programs</h2>
             {
                 programs.map((editor, index) => (
-                    <div key={index} id="editorsIndex">
-                        <p>{editor}</p>
-                    </div>
-                ))
-            }
-            <br></br>
-            <h2>Other Tools</h2>
-            {
-                other_tools.map((editor, index) => (
-                    <div key={index} id="editorsIndex">
+                    <div key={index} id="globalIndexDiv">
                         <p>{editor}</p>
                     </div>
                 ))

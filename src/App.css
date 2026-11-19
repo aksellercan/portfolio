@@ -1,18 +1,11 @@
-
-
-.eduList,
-.projectList,
-.toolingList,
-.editorsList {
+.globalUpperDiv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.eduList p,
-.toolingList p,
-.editorsList p {
+.globalUpperDiv p {
     margin: 0;
 }
 
@@ -20,7 +13,8 @@
 #projectIndex,
 #about,
 #toolingIndex,
-#editorsIndex {
+#editorsIndex,
+#globalIndexDiv {
     text-align: left;
     flex-wrap: wrap;
 }
@@ -31,21 +25,17 @@
     overflow-wrap: break-word;
 }
 
-#projectIndex a:link,
-#projectIndex a:visited {
+a:link,
+a:visited {
     color: azure;
 }
 
-#projectIndex a:hover {
+a:hover {
     color: skyblue;
 }
 
-#eduPos,
-#projects,
-#toolingPos,
-#editorsPos {
+.globalPositionDiv {
     width: 50%;
-    /* border-radius: 2%; */
     margin-inline: auto;
     border-color: cadetblue;
     border-style: groove;
@@ -54,13 +44,8 @@
 }
 
 @media(max-width: 770px) {
-
-    #eduPos,
-    #projects,
-    #toolingPos,
-    #editorsPos {
+    .globalPositionDiv {
         width: 100%;
         margin-inline: auto;
     }
 }
-

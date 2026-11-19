@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e
+
+function update_file(){
+    time_stamp=$(echo "\"$(date +%Y-%m-%d)\"")
+    sed -i '.BAK' "s/VITE_UPDATED_AT=.*/VITE_UPDATED_AT=${time_stamp}/" .env
+}
+
+if ! [ -f .env ]; then
+    echo ".env not found in directory!"
+    exit 1
+fi
+
+update_file
+
+if ! [ $# == 0 ]; then
+    git commit "$1"
+fi
+
+git add .env
+git status

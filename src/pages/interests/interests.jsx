@@ -6,6 +6,8 @@ export default function interests() {
     return <>
         <Programs />
         <br></br>
+        <Tools />
+        <br></br>
         <Computers />
         <br></br>
     </>
