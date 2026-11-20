@@ -31,7 +31,7 @@ export default function NetworkCloudDrive() {
                 <li>Paging <span>(some endpoints already have it on master)</span></li>
             </ul>
 
-            <p>Other improvements are on path handling. Currently paths are accessed via "id". Since folder names and places can change to avoid double action on each move operation, paths are represented as id paths Ex. "0/3/1/4". This works but has an issue with enough nesting using huge numbers it will vventually reach character limit of VARCHAR. I can use more storage for VARCHAR but thats not good.</p>
+            <p>Other improvements are on path handling. Currently paths are accessed via "id". Since folder names and places can change to avoid double action on each move operation, paths are represented as id paths Ex. "0/3/1/4". This works but has an issue with enough nesting using huge numbers it will eventually reach character limit of VARCHAR. I can use more storage for VARCHAR but thats not good.</p>
             <br></br>
             <p>New path system adds "parent id" property. Which uses a similiar way to resolve the path but I no longer need to use String manuplation, It's all done by a simple loop now.</p>
             <br></br>

@@ -2,6 +2,7 @@ export default function computers() {
     const computers = [
         {
             name: "Macbook Pro 14\"",
+            purpose: "Main computer",
             operatingSystem: "MacOS 27",
             processor: "M5",
             hasDedicatedGPU: false,
@@ -10,6 +11,7 @@ export default function computers() {
         },
         {
             name: "Lenovo Ideapad Gaming 3",
+            purpose: "Gaming",
             operatingSystem: "Windows 10 LTSC && Arch Linux",
             processor: "AMD Ryzen 5 5600H",
             hasDedicatedGPU: true,
@@ -19,6 +21,7 @@ export default function computers() {
         },
         {
             name: "Toshiba Portege Z930",
+            purpose: "Home Server",
             operatingSystem: "Arch Linux",
             processor: "Intel i5 3337U",
             hasDedicatedGPU: false,
@@ -27,6 +30,7 @@ export default function computers() {
         },
         {
             name: "Microsoft Surface Go 2",
+            purpose: "Note taking and Reading",
             operatingSystem: "Windows 11 Pro",
             processor: "Intel Core M3-8100Y",
             hasDedicatedGPU: false,
@@ -45,6 +49,7 @@ export default function computers() {
                     computers.map((komp, index) => (
                         <div id="globalIndexDiv" key={index}>
                             <h4>&gt; {komp.name}</h4>
+                            <p>{komp.purpose}</p>
                             <p>OS: {komp.operatingSystem}</p>
                             <p>CPU: {komp.processor}</p>
                             {

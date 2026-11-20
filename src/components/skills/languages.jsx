@@ -3,8 +3,10 @@ export default function languages() {
         "Java (primary)",
         "C#",
         "C",
-        "Javascript/TypeScript",
-        "Rust (currently learning)"
+        "Rust (currently learning)",
+        "Python",
+        "Bash",
+        "Javascript/TypeScript"
     ]
 
     const frameworks = [
@@ -20,9 +22,6 @@ export default function languages() {
             <ul>
                 {
                     languages.map((lang, index) => (
-                        // <div key={index}>
-                        //     <p>{lang}</p>
-                        // </div>
                         <li key={index}>{lang}</li>
                     ))
                 }
@@ -32,9 +31,6 @@ export default function languages() {
             <ul>
                 {
                     frameworks.map((frame, index) => (
-                        // <div key={index}>
-                        //     <p>{frame}</p>
-                        // </div>
                         <li key={index}>{frame}</li>
                     ))
                 }

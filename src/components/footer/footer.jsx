@@ -6,7 +6,7 @@ export default function footer() {
             <div id='stackList'>
                 <h4>Tech Stack:</h4>
                 <p>Framework: Vite with React</p>
-                <p>Font: Lilex Nerd Font</p>
+                <p>Font: <a href={"https://lilex.myrt.co/"}>Lilex Nerd Font</a></p>
                 <p>Hosting: Github Pages</p>
             </div>
             <div id='imgDiv'>

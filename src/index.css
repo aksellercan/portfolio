@@ -1,8 +1,8 @@
 html body {
   background: darkslategray;
   color: azure;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: "Lilex Nerd Font";
+  font-size: 1rem;
 }
 
 @font-face {
