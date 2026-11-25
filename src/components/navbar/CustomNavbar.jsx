@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import { Link, useLocation } from 'react-router-dom';
+import useWindowDimensions from '../../hooks/WindowDimensions';
 
 //logos
 import githubIcon from '../../assets/github.svg';
@@ -24,12 +25,24 @@ const socialLinks = [
 ];
 
 export default function CustomNavbar() {
+  const PathAsNavbarBrand = useLocation().pathname;
+
+  const CalculateDynamically = () => {
+    const width = useWindowDimensions().width;
+    // 1 rem 16px taking average width of letters so ~8
+    const limit = Math.floor(((width / 3) - (8 * PathAsNavbarBrand.length)) / 8);
+    if (PathAsNavbarBrand.length < limit) {
+      return PathAsNavbarBrand;
+    }
+    return PathAsNavbarBrand.substring(0, limit).concat("...");
+  }
+
   return (
     <>
       <Navbar className='navbar' data-bs-theme="dark" sticky='top'>
-        <Container>
+        <Container fluid className="px-2">
           <Navbar.Brand as={Link} to="/" className="d-none d-md-inline-flex">
-            {useLocation().pathname}
+            {<CalculateDynamically />}
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/'>Home</Nav.Link>

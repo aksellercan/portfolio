@@ -30,7 +30,7 @@ a:hover {
 }
 
 .globalPositionDiv {
-    width: 50%;
+    width: 60%;
     margin-inline: auto;
     border-color: cadetblue;
     border-style: groove;
@@ -43,7 +43,7 @@ body span {
     color: skyblue;
 }
 
-@media(max-width: 770px) {
+@media(max-width: 1000px) {
     .globalPositionDiv {
         width: 100%;
         margin-inline: auto;
