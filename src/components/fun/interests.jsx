@@ -1,8 +1,6 @@
-export default function interests() {
+import BasicComponent from "../generators/BasicComponent"
+import content from "../../assets/json/interests.json"
 
-    return <div className="globalUpperDiv">
-        <div className="globalPositionDiv">
-            <p>TODO</p>
-        </div>
-    </div>
+export default function Interests() {
+    return <BasicComponent formattedParagraphTextsList={content} />
 }

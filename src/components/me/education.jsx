@@ -1,4 +1,4 @@
-export default function education() {
+export default function Education() {
     const educationList = [
         {
             instutation: "University of Regensburg",

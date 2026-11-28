@@ -1,0 +1,26 @@
+{
+    "name": "portfolio_spec",
+    "style": "row",
+    "page_styles": {
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "10px"
+    },
+    "structure": [
+        {
+            "title": {
+                "content": "Portfolio Website"
+            },
+            "content": "This page is generated from json file which allows me to update content without modifying internal code",
+            "type": "paragraph"
+        },
+        {
+            "title": {
+                "content": "Used JSON:"
+            },
+            "content": "{\n\"name\": \"portfolio_spec\",\n\"style\": \"row\",\n\"page_styles\": {\n\"display\": \"flex\",\n\"justifyContent\": \"center\",\n\"alignItems\": \"center\",\n\"gap\": \"10px\"\n},\n\"structure\": [\n{\n\"title\": {\n\"content\": \"Portfolio Website\"\n},\n\"content\": \"This page is generated from json file which allows me to update content without modifying internal code\",\n\"type\": \"paragraph\"\n},\n{\n\"title\": {\n\"content\": \"Used Structure:\"\n},\n\"content\": \"this_json\"\n}\n]\n}",
+            "type": "paragraph"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+.footerContainer {
+    border-color: cadetblue;
+    border-style: groove none none none;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+#pContainer p {
+    margin: 0;
+}
+
+#version {
+    margin: 0;
+    color: skyblue;
+}
+
+#imgContainer {
+    display: block;
+    align-self: center;
+    margin: 1rem;
+}
+
+#easter {
+    width: 60px;
+    height: 60px;
+}

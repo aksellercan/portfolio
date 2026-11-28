@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+.BasicComponentUpperDiv.stack-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.BasicComponentUpperDiv.stack-column {
+    flex-direction: column;
+}
 
 body p {
     margin: 0;
@@ -29,7 +37,8 @@ a:hover {
     color: skyblue;
 }
 
-.globalPositionDiv {
+.globalPositionDiv,
+.WholeBlockDiv {
     width: 60%;
     margin-inline: auto;
     border-color: cadetblue;
@@ -44,7 +53,9 @@ body span {
 }
 
 @media(max-width: 1000px) {
-    .globalPositionDiv {
+
+    .globalPositionDiv,
+    .WholeBlockDiv {
         width: 100%;
         margin-inline: auto;
     }

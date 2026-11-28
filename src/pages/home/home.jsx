@@ -1,16 +1,13 @@
-import Education from './../../components/me/education'
-import Myself from './../../components/me/myself'
-import ProjectLinks from './../../components/projects/ProjectLinks'
-import Languages from './../../components/skills/languages'
+import Education from '../../components/me/education'
+import Myself from '../../components/me/myself'
+import ProjectLinks from '../../components/projects/ProjectLinks'
+import Languages from '../../components/skills/languages'
 
-export default function home() {
+export default function Home() {
     return <>
         <Myself />
-        <br></br>
         <Education />
-        <br></br>
         <ProjectLinks />
-        <br></br>
         <Languages />
     </>
 }

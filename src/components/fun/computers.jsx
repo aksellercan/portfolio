@@ -1,4 +1,4 @@
-export default function computers() {
+export default function Computers() {
     const computers = [
         {
             name: "Macbook Pro 14\"",
